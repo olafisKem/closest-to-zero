@@ -1,2 +1,4 @@
 
-export const closestToZero = (xs: number[]) => {}
+export const closestToZero = (xs: number[]) => {
+    return null;
+}
