@@ -15,7 +15,8 @@ export const closestToZero = (xs: number[]) => {
     if (xs.length === 0) {
       return null;
     }
-
-    return xs[0];
-    
-}
+    if (xs.length === 1) {
+        return xs[0];
+    };
+   return xs[0] > xs[1] ? xs[1]: xs[0];
+};
