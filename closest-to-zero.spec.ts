@@ -7,5 +7,6 @@ describe('closestToZero', () => {
     });
     it('should return the number if the array has one number', () => {
         expect(closestToZero([1])).toBe(1);
+        expect(closestToZero([2])).toBe(2);
     });
 });
