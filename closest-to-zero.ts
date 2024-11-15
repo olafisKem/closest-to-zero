@@ -12,7 +12,7 @@
 // (expression->function) replacing an expression with a function or algorithm
 // (variable->assignment) replacing the value of a variable.
 
-//what about edgecases: negative numbers, string, 
+//what about edgecases: negative numbers, string, does zero count as closest to zero
 
 export const closestToZero = (xs: number[]) => {
     if (xs.length === 0) {
@@ -21,5 +21,9 @@ export const closestToZero = (xs: number[]) => {
     if (xs.length === 1) {
         return xs[0];
     };
-   return xs[0] > xs[1] ? xs[1]: xs[0];
+    if (xs[0] > xs[1]) {
+        return xs[1];
+    } else {
+        return xs[0];
+    }; 
 };

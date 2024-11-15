@@ -13,8 +13,9 @@ describe('closestToZero', () => {
         expect(closestToZero([2,1])).toBe(1);
         expect(closestToZero([5,4])).toBe(4);
     });
-    it('should return the closest number to zero if the array has more than two numbers', () => {
-        expect(closestToZero([6,4,1])).toBe(1);
-        expect(closestToZero([7,5,0])).toBe(0);
+    it('should return the closest number to zero if the array has two numbers, including negatives', () => {
+        expect(closestToZero([2, -1])).toBe(-1);
+        expect(closestToZero([-2, 1])).toBe(1); 
+        expect(closestToZero([-3, -5])).toBe(-3);
     });
 });
