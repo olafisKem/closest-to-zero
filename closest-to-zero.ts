@@ -16,5 +16,6 @@ export const closestToZero = (xs: number[]) => {
       return null;
     }
 
-    return 1;
+    return xs[0];
+    
 }
