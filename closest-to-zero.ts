@@ -11,6 +11,9 @@
 // (if->while)
 // (expression->function) replacing an expression with a function or algorithm
 // (variable->assignment) replacing the value of a variable.
+
+//what about edgecases: negative numbers, string, 
+
 export const closestToZero = (xs: number[]) => {
     if (xs.length === 0) {
       return null;
